@@ -1,0 +1,29 @@
+.navbar {
+  padding: 0 2rem;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar li {
+  border-right: solid 1px #926cf9;
+}
+
+.navbar a {
+  padding: 0 1rem;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
