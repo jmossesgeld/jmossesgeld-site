@@ -1,16 +1,46 @@
-.container {
+.home {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #fbe0ff, #999dff);
+  color: #1b0066;
 }
 
 .title {
-  padding: 0 2rem;
-  padding-top: 25vh;
-  margin-left: 1rem;
-  font-size: 2rem;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+.visible {
+  height: auto;
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 
 .img {
   padding: 2rem;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.aboutTitle {
+  font-size: 1.5rem;
+  margin-left: 5%;
 }

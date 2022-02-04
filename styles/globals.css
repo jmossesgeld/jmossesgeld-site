@@ -3,9 +3,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: Montserrat, Garamond, sans-serif;
-  background: linear-gradient(to right, #efdcfe, #b3b5ff);
-  color: #1b0066;
+  height: 10000px;
 }
+
+
 
 a {
   color: inherit;
