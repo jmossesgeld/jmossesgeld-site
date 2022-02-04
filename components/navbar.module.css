@@ -19,7 +19,7 @@
 
 .items a {
   border-right: solid 1px #926cf9;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   margin: 0 0.5%;
 }
 
@@ -28,7 +28,7 @@
   color: #fff;
   border-radius: 9999px;
   border: #fff;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .img {

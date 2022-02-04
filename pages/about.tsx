@@ -23,9 +23,8 @@ const About: NextPage = () => {
           <div>
             <p>
               I am self-directed software engineer and certified public accountant with a passion
-              for improving business processes and the lives of others through developing useful
-              software that will alleviate difficult business tasks which will increase efficiency
-              and overall output value.
+              for improving business processes through developing useful software that will
+              alleviate difficult business tasks and increase efficiency and overall output value.
             </p>
             <p>
               I am currently looking for a full-time position as a software engineer. If you are
