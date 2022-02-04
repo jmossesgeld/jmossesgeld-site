@@ -1,13 +1,13 @@
 .navbar {
   overflow: hidden;
   width: 100vw;
+  max-width: 1600px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: auto;
   min-height: 2rem;
-  padding: 0.5rem;
   z-index: 1;
 }
 
@@ -19,8 +19,17 @@
 
 .items a {
   border-right: solid 1px #926cf9;
-  padding: 0 0.5rem;
-  margin: 0 0.5%;
+  padding: 0 2rem;
+  margin: 2rem 2%;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .items a {
+    padding: 0 0.5rem;
+    margin: 0 0.5%;
+    font-size: 1rem;
+  }
 }
 
 .items a:hover {

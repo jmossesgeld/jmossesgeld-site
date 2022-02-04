@@ -7,6 +7,7 @@ const About: NextPage = () => {
   return (
     <>
       <div className={styles.about} id="about">
+        {/* Story */}
         <div className={styles.aboutTitle}>
           <h2>About Me</h2>
         </div>
@@ -22,16 +23,22 @@ const About: NextPage = () => {
           </div>
           <div>
             <p>
-              I am self-directed software engineer and certified public accountant with a passion
-              for improving business processes through developing useful software that will
-              alleviate difficult business tasks and increase efficiency and overall output value.
+              <strong>
+                I am a self-directed software engineer with a passion for improving business
+                processes through developing useful software that can alleviate difficult business
+                tasks and increase overall output value.
+              </strong>
             </p>
             <p>
-              I am currently looking for a full-time position as a software engineer. If you are
-              interested in working with me, please contact me at
-              <a href="mailto:jmossesgeld@gmail.com"> jmossesgeld@gmail.com</a>
+              My years of experience as a certified public accountant led me to have a strong
+              understanding of how to work in a team, how to deal with clients, and how to work in a
+              fast-paced environment.
             </p>
           </div>
+        </div>
+        {/* Work Experience */}
+        <div className={styles.aboutTitle}>
+          <h2>Work Experience</h2>
         </div>
       </div>
     </>
