@@ -19,7 +19,9 @@ const Home: NextPage = () => {
       <div className={styles.home}>
         <div className={`${styles.title} ${visible && styles.visible}`}>
           <h1>John Al Mossesgeld</h1>
-          <h5>SOFTWARE ENGINEER <span>|</span> FULL-STACK WEB DEVELOPER</h5>
+          <h5>
+            SOFTWARE ENGINEER <span>|</span> FULL-STACK WEB DEVELOPER
+          </h5>
           <div style={box}>
             <button className={styles.button}>SEE MY PROJECTS</button>
             <a href="https://github.com/jmossesgeld" target="_blank" rel="noopener noreferrer">

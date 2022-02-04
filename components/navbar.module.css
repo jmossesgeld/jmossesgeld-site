@@ -1,7 +1,7 @@
 .navbar {
+  max-width: 1200px;
   overflow: hidden;
   width: 100vw;
-  max-width: 1600px;
   position: fixed;
   display: flex;
   justify-content: space-between;
