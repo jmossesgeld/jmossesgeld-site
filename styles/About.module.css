@@ -1,0 +1,21 @@
+
+.borderCircle {
+    border-radius: 9999px;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  
+  .aboutTitle {
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+  
