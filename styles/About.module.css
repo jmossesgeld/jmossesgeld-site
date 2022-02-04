@@ -1,21 +1,36 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .borderCircle {
-    border-radius: 9999px;
-  }
-  
-  .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    height: 100vh;
-  }
-  
-  .aboutTitle {
-    font-size: 1.5rem;
-    margin-left: 5%;
-  }
-  
+  border-radius: 9999px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  animation: 0.7s ease-out 0s 1 slideInFromLeft;
+}
+
+.aboutTitle {
+  font-size: 1.5rem;
+  margin: 5%;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin: 5%;
+}

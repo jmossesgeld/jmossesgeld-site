@@ -13,13 +13,22 @@
 
 .items {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .items a {
   border-right: solid 1px #926cf9;
-  padding: 0 1rem;
+  padding: 0 .5rem;
+  margin: 0 0.5%;
+}
+
+.items a:hover {
+  background-color: #beb7d3;
+  color: #fff;
+  border-radius: 9999px;
+  border: #fff;
+  transition: all 0.2s;
 }
 
 .img {
