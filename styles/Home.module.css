@@ -13,12 +13,13 @@
   overflow: hidden;
   height: 0;
   opacity: 0;
+  font-size: 2rem;
 }
 
 .visible {
   height: auto;
   opacity: 1;
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .img {
@@ -43,4 +44,12 @@
 .aboutTitle {
   font-size: 1.5rem;
   margin-left: 5%;
+}
+
+.button {
+  padding: 1rem 2rem;
+  background-color: rgb(201, 201, 248);
+  border: 0;
+  border-radius: 9999px;
+  color : #1b0066;
 }

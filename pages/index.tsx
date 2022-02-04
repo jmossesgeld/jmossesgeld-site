@@ -9,6 +9,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setVisible(true);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -18,9 +19,9 @@ const Home: NextPage = () => {
       {/* Homepage */}
       <div className={styles.home}>
         <div className={`${styles.title} ${visible && styles.visible}`}>
-          <h1>Hi! </h1>
-          <h1>I am John Al Mossesgeld</h1>
-          <h5>SOFTWARE ENGINEER</h5>
+          <h1>John Al Mossesgeld</h1>
+          <h5>SOFTWARE ENGINEER | FULL-STACK WEB DEVELOPER</h5>
+          <button className={styles.button}>CHECK MY WORK</button>
         </div>
       </div>
 
@@ -42,14 +43,14 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.aboutContentLeftText}>
               <p>
-                I am a software engineer with a passion for building software that improves the
-                lives of others. I have a background in computer science and mathematics, and I am
-                currently pursuing a B.S. in Computer Science at the University of Waterloo.
+                A software developer with a passion for building software that improves business
+                processes and the lives of others. Also a certified public accountant who helps
+                businesses grow by providing management accounting and financial reporting services.
               </p>
               <p>
                 I am currently looking for a full-time position as a software engineer. If you are
-                interested in working with me, please contact me at{" "}
-                <a href="mailto:jmossesgeld@gmail.com"></a>
+                interested in working with me, please contact me at 
+                <a href="mailto:jmossesgeld@gmail.com"> jmossesgeld@gmail.com</a>
               </p>
             </div>
           </div>
