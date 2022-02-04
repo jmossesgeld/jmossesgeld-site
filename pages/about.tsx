@@ -1,14 +1,11 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/About.module.css";
-import NavBar from "../components/navbar";
-import BgVideo from "../components/bgVideo";
+import Layout from "../components/layout";
 
 const About: NextPage = () => {
   return (
     <>
-      <NavBar />
-      <BgVideo/>
       <div className={styles.about} id="about">
         <div className={styles.aboutTitle}>
           <h2>About Me</h2>
