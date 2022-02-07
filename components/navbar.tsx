@@ -14,6 +14,8 @@ export default function NavBar() {
               width={50}
               alt="profile img"
               className={styles.borderCircle}
+              placeholder="blur"
+              priority
             />
           </a>
         </Link>
