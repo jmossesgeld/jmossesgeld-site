@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import styles from "../styles/About.module.css";
 import Layout from "../components/layout";
 
@@ -13,7 +12,7 @@ const About: NextPage = () => {
         </div>
         <div>
           <div>
-            <Image
+            <img
               src="/images/profile.jpg"
               height={200}
               width={200}
