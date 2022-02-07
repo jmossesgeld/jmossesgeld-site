@@ -13,7 +13,7 @@ const About: NextPage = () => {
         </div>
         <div>
           <div>
-            <Image
+            <img
               src="/images/profile.jpg"
               height={200}
               width={200}
