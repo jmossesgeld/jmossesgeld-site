@@ -1,5 +1,6 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
@@ -7,7 +8,7 @@ export default function NavBar() {
       <div className={styles.img}>
         <Link href="/">
           <a>
-            <img
+            <Image
               src="/images/profile2.jpg"
               height={50}
               width={50}

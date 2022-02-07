@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import styles from "../styles/About.module.css";
 import Layout from "../components/layout";
+import Image from "next/image";
 
 const About: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const About: NextPage = () => {
         </div>
         <div>
           <div>
-            <img
+            <Image
               src="/images/profile.jpg"
               height={200}
               width={200}
