@@ -19,6 +19,7 @@ const About: NextPage = () => {
               width={200}
               alt="profile img"
               className={styles.borderCircle}
+              priority
             />
           </div>
           <div>
