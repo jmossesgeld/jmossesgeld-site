@@ -1,33 +1,10 @@
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateY(-5%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .borderCircle {
   border-radius: 9999px;
 }
 
-.about {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  animation: 0.7s ease-out 0s 1 slideInFromLeft;
-  padding-top: 10vh;
-}
 
 .aboutTitle {
   font-size: 1.5rem;
-  margin: 0 5%;
 }
 
 .about p {

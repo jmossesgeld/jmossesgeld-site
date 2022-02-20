@@ -6,14 +6,14 @@ import Image from "next/image";
 const About: NextPage = () => {
   return (
     <>
-      <div className={styles.about} id="about">
+      <div className="container" id="about">
         {/* Story */}
         <div className={styles.aboutTitle}>
           <h2>About Me</h2>
         </div>
         <div>
           <div>
-            <img
+            <Image
               src="/images/profile.jpg"
               height={200}
               width={200}

@@ -22,7 +22,9 @@ export default function NavBar() {
         <Link href="/about">
           <a>About</a>
         </Link>
-        <a href="#">Skills</a>
+        <Link href="/skills">
+          <a>Skills</a>
+        </Link>
         <a href="#">Projects</a>
         <a href="#" style={{ border: 0 }}>
           Contact
