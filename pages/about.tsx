@@ -24,11 +24,9 @@ const About: NextPage = () => {
           </div>
           <div>
             <p>
-              <strong>
                 I am a self-directed software engineer with a passion for improving business
                 processes through developing useful software that can alleviate difficult business
                 tasks and increase overall output value.
-              </strong>
             </p>
             <p>
               My years of experience as a certified public accountant led me to have a strong
