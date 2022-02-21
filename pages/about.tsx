@@ -21,7 +21,6 @@ const About: NextPage = () => {
       <div
         className="container"
         id="about"
-        style={{ display: "flex", flexDirection: window.innerWidth > 1000 ? undefined : "column" }}
       >
         <div style={aboutFront}>
           <Image
