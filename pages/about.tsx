@@ -8,7 +8,7 @@ const alignLeft: CSSProperties = {
 
 const aboutFront: CSSProperties = {
   margin: "2rem auto",
-  height: "70vh",
+  height: "80vh",
   display: "flex",
   justifyContent: "space-evenly",
   alignItems: "center",

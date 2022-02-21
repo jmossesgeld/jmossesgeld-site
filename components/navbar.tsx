@@ -9,14 +9,7 @@ export default function NavBar() {
         <div className="img">
           <Link href="/">
             <a>
-              <Image
-                src="/images/profile2.jpg"
-                height={50}
-                width={50}
-                alt="profile img"
-                className="borderCircle"
-                priority
-              />
+              <h1>JM</h1>
             </a>
           </Link>
         </div>
@@ -55,7 +48,6 @@ export default function NavBar() {
         }
 
         .items a {
-          border-right: solid 1px #926cf9;
           padding: 0 2rem;
           margin: 2rem 2%;
           font-size: 1.4rem;
