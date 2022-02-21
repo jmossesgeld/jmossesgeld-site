@@ -38,5 +38,10 @@ a {
   max-width: 600px;
   margin: 0 auto;
   animation: 0.7s ease-out 0s 1 slideInFromTop;
-  padding-top: 15vh;
+  padding-top: 12vh;
+}
+
+
+.circleImg {
+  border-radius: 9999px;
 }
