@@ -3,7 +3,7 @@ import Image from "next/image";
 const bodyText = "text-md mt-2 max-w-xl mx-4 ";
 const heading = "font-black text-xl mx-4 mt-6 ";
 const workBox =
-  "relative my-10 md:my-20 border-indigo-100 border-2 p-3 mx-2 rounded-lg shadow-md md:odd:left-32 md:even:right-32 transition-all duration-200";
+  "backdrop-blur-lg relative my-10 md:my-20 border-indigo-100 border-2 p-3 mx-2 rounded-lg shadow-md md:odd:left-28 md:even:right-28 transition-all duration-200";
 
 export default function About() {
   return (

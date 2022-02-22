@@ -6,7 +6,7 @@ export default function Welcome() {
         SOFTWARE ENGINEER <span>|</span> FULL-STACK WEB DEVELOPER
       </h5>
       <div className="flex justify-center align-center animate-fade-in">
-        <button className="px-8 py-4 font-bold rounded-full bg-violet-100 text-indigo-900 hover:bg-violet-500 hover:text-violet-100 hover:scale-105 transition-all duration-200 ">
+        <button className="px-8 py-4 font-bold rounded-full border-2 border-indigo-200 bg-indigo-100 text-indigo-900 hover:bg-violet-500 hover:text-violet-100 hover:scale-105 transition-all duration-200 ">
           SEE MY PROJECTS
         </button>
         <a href="https://github.com/jmossesgeld" target="_blank" rel="noopener noreferrer">

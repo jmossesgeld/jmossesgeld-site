@@ -1,6 +1,6 @@
 import NavBar from "./navbar";
 import Head from "next/head";
-import BgVideo from "./bgvideo";
+import Background from "./background";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <title>John Al Mossesgeld</title>
       </Head>
       <NavBar />
-      {/* <BgVideo/> */}
+      <Background/>
       {children}
     </div>
   );

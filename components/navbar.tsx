@@ -1,6 +1,4 @@
-import styles from "./navbar.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 const StyledLink: React.FC<any> = ({ children, href, ...props }) => (
   <Link href={href}>
@@ -22,7 +20,7 @@ export default function NavBar(): JSX.Element {
       <div className="img">
         <StyledLink
           href="/"
-          className="text-2xl font-black rounded-full hover:bg-violet-900 hover:border-violet-900 hover:text-white p-3 border-2 border-violet-100 transition-all duration-200"
+          className="text-2xl font-black rounded-full hover:bg-violet-900 hover:border-violet-900 hover:text-white p-3 border-2 border-violet-200 transition-all duration-200"
         >
           JM
         </StyledLink>
