@@ -1,14 +1,16 @@
 import type { NextPage } from "next";
 import Welcome from "../components/welcome";
 import About from "../components/about";
-import Skills from "../components/skills";
+import Certs from "../components/skills";
+import Projects from "../components/projects";
 
 const Home: NextPage = () => {
   return (
     <>
       <Welcome />
       <About />
-      <Skills />
+      <Certs />
+      <Projects/>
     </>
   );
 };

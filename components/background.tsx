@@ -9,7 +9,7 @@ export default function Background() {
       {/* <div className="fixed -z-10 w-screen h-screen overflow-hidden">
         <Image src="/bgwallpaper.jpg" alt="background" layout="fill" objectFit="cover" />
       </div> */}
-      {/* <div className="fixed -z-10 w-screen h-screen overflow-hidden bg-gradient-to-r from-white to-fuchsia-100"></div> */}
+      {/* <div className="fixed -z-10 w-screen h-screen overflow-hidden bg-gradient-to-bl from-indigo-500 to-fuchsia-500"></div> */}
     </>
   );
 }

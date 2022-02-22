@@ -3,24 +3,23 @@ import Image from "next/image";
 const bodyText = "text-md mt-2 max-w-xl mx-4 ";
 const heading = "font-black text-xl mx-4 mt-6 ";
 const workBox =
-  "backdrop-blur-lg relative my-10 md:my-20 border-indigo-100 border-2 p-3 mx-2 rounded-lg shadow-md md:odd:left-28 md:even:right-28 transition-all duration-200";
+  "backdrop-blur-lg relative my-10 md:my-20 border-indigo-100 border-2 p-3 mx-2 rounded-lg shadow-md md:odd:left-28 md:even:right-28 hover:scale-110 transition-all duration-200";
 
 export default function About() {
   return (
     <>
       <div className="" id="about">
-        <div className="flex justify-evenly items-center flex-col h-4/5 mx-auto text-center">
-          <Image
-            src="/images/profile2.jpg"
-            height={200}
-            width={200}
-            alt="profile img"
-            className="rounded-full"
-            priority
-          />
-
+        <div className="flex justify-evenly items-center flex-col h-4/5 mx-auto text-center bg-gradient-to-bl from-violet-100 to-indigo-400 py-24">
           <div>
-            <p className={bodyText + " italic pt-4"}>
+            <p className={bodyText + " italic bg-violet-200 rounded-xl p-8 flex flex-col items-center"}>
+              <Image
+                src="/images/profile2.jpg"
+                height={200}
+                width={200}
+                alt="profile img"
+                className="rounded-full"
+                priority
+              />
               I am a self-directed software developer with a passion for creating value by improving
               and simplifying business processes through building modern tools and software.
             </p>
@@ -28,7 +27,7 @@ export default function About() {
         </div>
 
         <div className="max-w-xl mx-auto">
-          <h1 className="font-black text-4xl mt-32 text-center">Work Experience</h1>
+          <h1 className="font-black text-4xl mt-16 text-center">Work Experience</h1>
           <div className={workBox}>
             <h3 className={heading}>Freelance Software Developer</h3>
             <em className={bodyText}>2021-present</em>
@@ -47,7 +46,7 @@ export default function About() {
             <p className={bodyText}>
               Providing solutions for accounting and tax problems of clients. Assignments were
               always delivered on time with zero missed deadlines even on pressurizing time
-              constraints. Increased my clients&apos; tax savings by 30%.
+              constraints.
             </p>
           </div>
 
