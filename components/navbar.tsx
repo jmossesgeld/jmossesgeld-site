@@ -14,7 +14,7 @@ const StyledLink: React.FC<any> = ({ children, href, ...props }) => (
 export default function NavBar(): JSX.Element {
   return (
     <nav
-      className="fixed flex justify-between items-center w-screen px-2 md:px-32 backdrop-blur-sm z-10 h-16"
+      className="fixed flex justify-between items-center w-screen px-2 md:px-32 backdrop-blur-sm z-10 h-20"
       id="#navbar"
     >
       <div className="img">
