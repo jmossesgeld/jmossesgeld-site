@@ -1,9 +1,12 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
 body {
   padding: 0;
   margin: 0;
   font-family: Montserrat, Garamond, sans-serif;
-  /* background: linear-gradient(to right, #fce9ff, #c2c4ff); */
   color: #1b0066;
   margin: auto;
   max-width: 1200px;
@@ -17,7 +20,9 @@ a {
 * {
   box-sizing: border-box;
 }
+ */
 
+/* 
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-5%);
@@ -44,4 +49,4 @@ a {
 
 .circleImg {
   border-radius: 9999px;
-}
+} */

@@ -1,46 +1,30 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
-import { useState, useEffect } from "react";
-import Layout from "../components/layout";
 
 const box = { display: "flex", justifyContent: "flex-start", alignItems: "center" };
 
 const Home: NextPage = () => {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setVisible(true);
-    // window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
       {/* Homepage */}
-      <div className="home">
-        <div className={`title ${visible && "visible"}`}>
-          <h1>John Al Mossesgeld</h1>
-          <h5>
-            SOFTWARE ENGINEER <span>|</span> FULL-STACK WEB DEVELOPER
-          </h5>
-          <div style={box}>
-            <button className="button">SEE MY PROJECTS</button>
-            <a href="https://github.com/jmossesgeld" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/jmossesgeld" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
+      <div className="flex h-screen justify-center items-start flex-col ml-32 space-y-6">
+        <h1 className="text-6xl">Hi! I am John Al Mossesgeld</h1>
+        <h5 className="text-2xl">
+          SOFTWARE ENGINEER <span>|</span> FULL-STACK WEB DEVELOPER
+        </h5>
+        <div className="flex justify-center align-center">
+          <button className="px-8 py-4 rounded-full bg-fuchsia-100 text-indigo-900 transition-all duration-200 hover:bg-indigo-500 hover:text-fuchsia-200">
+            SEE MY PROJECTS
+          </button>
+          <a href="https://github.com/jmossesgeld" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github ml-4 mt-2 text-4xl text-violet-400"></i>
+          </a>
+          <a href="https://linkedin.com/in/jmossesgeld" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin ml-4 mt-2 text-4xl text-violet-400"></i>
+          </a>
         </div>
       </div>
 
-      <style jsx>{`
-        .home {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          height: 90vh;
-        }
+      {/* <style jsx>{`
 
         .title {
           margin: 5% 1rem;
@@ -102,7 +86,7 @@ const Home: NextPage = () => {
         .title div {
           animation: 2s ease-out 0s 1 slideInFromLeft;
         }
-      `}</style>
+      `}</style> */}
     </>
   );
 };

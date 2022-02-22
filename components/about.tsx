@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { CSSProperties } from "styled-components";
+import { CSSProperties } from "react";
 
 const alignLeft: CSSProperties = {
   textAlign: "left",
@@ -18,10 +18,7 @@ const aboutFront: CSSProperties = {
 const About: NextPage = () => {
   return (
     <>
-      <div
-        className="container"
-        id="about"
-      >
+      <div className="container" id="about">
         <div style={aboutFront}>
           <Image
             src="/images/profile2.jpg"
