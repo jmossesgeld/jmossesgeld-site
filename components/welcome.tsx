@@ -21,13 +21,16 @@ export default function Welcome() {
         >
           CHECK MY PROJECTS
         </a>
+
         <a href="https://github.com/jmossesgeld" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github ml-4 mt-2 text-4xl text-violet-400 hover:animate-bounce"></i>
         </a>
+
         <a href="https://linkedin.com/in/jmossesgeld" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin ml-4 mt-2 text-4xl text-violet-400 hover:animate-bounce"></i>
         </a>
       </div>
+
       <i className="fa fa-angles-down text-5xl absolute bottom-5 left-1/2 rounded-full text-violet-500 h-12 w-12 animate-bounce"></i>
     </div>
   );

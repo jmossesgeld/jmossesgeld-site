@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <title>John Al Mossesgeld</title>
       </Head>
       <NavBar />
-      <Background/>
+      <Background />
       {children}
     </div>
   );

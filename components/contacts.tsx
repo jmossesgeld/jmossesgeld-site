@@ -37,7 +37,6 @@ export default function Contacts() {
         <div className="flex space-x-4 items-center">
           <Link href="https://linkedin.com/in/jmossesgeld" icon="fab fa-linkedin" />
           <Link href="https://www.github.com/jmossesgeld/" icon="fab fa-github" />
-          <Link href="https://www.facebook.com/miragefallingsky" icon="fab fa-facebook" />
           <Link href="https://www.twitter.com/jmossesgeld" icon="fab fa-twitter" />
           <Link href="mailto:jmossesgeld@gmail.com" icon="fa-solid fa-envelope" />
         </div>
