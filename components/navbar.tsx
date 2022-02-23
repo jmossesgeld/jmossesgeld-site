@@ -3,7 +3,7 @@ import Link from "next/link";
 const StyledLink: React.FC<any> = ({ children, href, ...props }) => (
   <Link href={href}>
     <a
-      className="my-8 text-sm md:text-xl px-1 mx-1 md:px-8  hover:bg-violet-300 hover:text-white hover:rounded-full transition-all duration-200"
+      className="my-8 text-sm lg:text-xl px-1 mx-1 md:px-8  hover:bg-violet-300 hover:text-white hover:rounded-full transition-all duration-200"
       {...props}
     >
       {children}
@@ -14,7 +14,7 @@ const StyledLink: React.FC<any> = ({ children, href, ...props }) => (
 export default function NavBar(): JSX.Element {
   return (
     <nav
-      className="fixed flex justify-between items-center w-screen px-2 md:px-32 backdrop-blur-sm z-10 h-20"
+      className="fixed flex justify-between items-center w-screen px-2 lg:px-32 backdrop-blur-sm z-10 h-16 pt-4"
       id="#navbar"
     >
       <div className="img">
