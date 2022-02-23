@@ -55,7 +55,7 @@ export default function Skills() {
             "Firebase",
             "Heroku",
             "Google Cloud Platform",
-            "Serveless Functions",
+            "Serverless Functions",
             "Firestore",
           ]}
         />
