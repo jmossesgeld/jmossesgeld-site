@@ -1,8 +1,8 @@
 export default function Welcome() {
   return (
-    <div className="flex h-screen justify-center items-start flex-col px-5 md:px-32 space-y-6 transition-all duration-200 animate-fade-in-down">
-      <h1 className="text-6xl">John Al Mossesgeld</h1>
-      <h5 className="text-sm md:text-2xl">FULL-STACK WEB DEVELOPER</h5>
+    <div className="flex h-screen justify-center items-start flex-col px-5 md:px-32 space-y-6 transition-all duration-200 ">
+      <h1 className="text-6xl font-sans animate-fade-in-down">John Al Mossesgeld</h1>
+      <h5 className="text-sm md:text-2xl animate-fade-in-left">FULL-STACK WEB DEVELOPER</h5>
       <div className="flex justify-center align-center animate-fade-in">
         <a
           href="#projects"
