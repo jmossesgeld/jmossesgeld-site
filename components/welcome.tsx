@@ -7,7 +7,7 @@ export default function Welcome() {
       <h5 className="text-sm md:text-2xl animate-fade-in-left">
         <Typewriter
           options={{
-            strings: "Full Stack Web and Software Developer",
+            strings: "Full-Stack Web / Software Developer",
             autoStart: true,
             loop: false,
             delay: 50,
