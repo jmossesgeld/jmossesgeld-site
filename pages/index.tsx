@@ -3,6 +3,7 @@ import Welcome from "../components/welcome";
 import About from "../components/about";
 import Certs from "../components/skills";
 import Projects from "../components/projects";
+import Contacts from "../components/contacts";
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <About />
       <Certs />
       <Projects/>
+      <Contacts/>
     </>
   );
 };
