@@ -9,8 +9,8 @@ const workBox =
 export default function About() {
   const { ref, inView } = useInView({});
   return (
-    <div className={"" + (inView ? " animate-fade-in" : " opacity-0")} ref={ref} id="about">
-      <div className="flex justify-evenly items-center flex-col h-4/5 mx-auto text-center bg-gradient-to-bl from-violet-100 to-indigo-400 py-24">
+    <div className={"" + (inView ? " animate-fade-in-down" : " opacity-0")} ref={ref} id="about">
+      <div className="flex justify-evenly items-center flex-col h-4/5 mx-auto text-center  bg-indigo-100 py-24">
         <div>
           <p
             className={bodyText + " italic bg-violet-200 rounded-xl p-8 flex flex-col items-center"}

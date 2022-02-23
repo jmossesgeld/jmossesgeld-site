@@ -19,7 +19,7 @@ export default function Contacts() {
   };
 
   return (
-    <div id="contact" className={"bg-violet-600 p-5"}>
+    <div id="contact" className={"bg-violet-600 p-5 h-screen flex flex-col justify-center"}>
       <div className="relative flex flex-col items-center mt-16 mb-12 w-fit mx-auto justify-center group">
         <button
           onClick={onClick}
