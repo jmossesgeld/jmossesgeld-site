@@ -11,18 +11,18 @@ export default function About() {
   return (
     <div className={"" + (inView ? " animate-fade-in-down" : " opacity-0")} ref={ref} id="about">
       <div className="flex justify-evenly items-center flex-col h-4/5 mx-auto text-center  bg-indigo-100 py-24">
-        <div>
-          <p
-            className={bodyText + " italic bg-violet-200 rounded-xl p-8 flex flex-col items-center"}
-          >
-            <Image
-              src="/images/profile2.jpg"
-              height={200}
-              width={200}
-              alt="profile img"
-              className="rounded-full"
-              priority
-            />
+        <div
+          className={bodyText + " italic bg-violet-200 rounded-xl p-8 flex flex-col items-center"}
+        >
+          <Image
+            src="/images/profile2.jpg"
+            height={200}
+            width={200}
+            alt="profile img"
+            className="rounded-full"
+            priority
+          />
+          <p className="mt-6">
             I am a self-directed software developer with a passion for creating value by improving
             and simplifying business processes through building modern tools and software.
           </p>
