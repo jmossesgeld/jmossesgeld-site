@@ -10,7 +10,7 @@ export default function Welcome() {
             strings: "Full-Stack Web / Software Developer",
             autoStart: true,
             loop: false,
-            delay: 50,
+            delay: 70,
           }}
         />
       </h5>
