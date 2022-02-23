@@ -17,7 +17,7 @@ export default function Welcome() {
       <div className="flex justify-center align-center animate-fade-in">
         <a
           href="#projects"
-          className="px-8 py-4 font-bold rounded-full border-2 border-indigo-200 bg-indigo-100 text-indigo-900 hover:bg-violet-500 hover:text-violet-100 hover:scale-105 transition-all duration-100 "
+          className="px-8 py-4 font-bold rounded-full border-2 border-indigo-200 bg-indigo-100 text-indigo-900 hover:bg-violet-500 hover:text-violet-100 hover:scale-105 transition-all duration-100 hover:after:content-['>>'] hover:after:animate-ping"
         >
           CHECK MY PROJECTS
         </a>
