@@ -13,9 +13,7 @@ export default function Projects() {
               A web-based payroll software aimed to greatly reduce complexity of payroll
               preparation.
               <br />
-              Instead of the tedious timekeeping, computation of overtime, tardiness, absences,
-              mandatory deductions, etc., the users can reduce their payroll preparation times by
-              90% by using this software.
+              It features Excel integration, timekeeping, automatic computation, and payroll reporting.
             </p>
           }
           codeLink="https://github.com/jmossesgeld/ph-payroll-manager"
@@ -24,8 +22,8 @@ export default function Projects() {
         <Project
           src="/images/typing.gif"
           title="Online Typing Speed Test"
-          description="A web-based typing speed test which allows users to test their typing speed. The users keyboard speed are
-          measured based on words per minute (WPM)."
+          description="A web-based typing speed test which allows users to test their typing speed. The users' score are
+          measured based on typing accuracy and words per minute (WPM)."
           codeLink="https://github.com/jmossesgeld/react-typing-speed"
           liveLink="http://react-typing-speed.herokuapp.com/"
         />
