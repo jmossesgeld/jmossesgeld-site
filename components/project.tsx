@@ -7,6 +7,7 @@ interface ProjectProps {
   description: string | JSX.Element;
   codeLink: string;
   liveLink: string;
+  techUsed: string[];
 }
 
 const bodyText = "text-md my-4 mx-4 text-justify";
@@ -16,12 +17,21 @@ const workBox =
 const button =
   "px-8 h-auto my-auto py-2 font-bold rounded-full border-2 border-indigo-200 bg-indigo-100 text-indigo-900 hover:bg-violet-500 hover:text-violet-100 hover:scale-105 transition-all duration-100 ";
 
+function TechItem({ text }: { text: string }) {
+  return (
+    <div className="m-1 text-black bg-violet-50 inline border-2 border-violet-200 hover:bg-violet-700 hover:text-violet-50 rounded p-3 hover:scale-110 transition-all duration-100">
+      {text}
+    </div>
+  );
+}
+
 export default function Project({
   src,
   title,
   codeLink,
   liveLink,
   description,
+  techUsed,
 }: ProjectProps): JSX.Element {
   const { ref, inView } = useInView({});
 
@@ -29,7 +39,7 @@ export default function Project({
     <div
       className={workBox + (inView ? " animate-fade-in" : " opacity-0")}
       ref={ref}
-      style={{ minHeight: "800px", width: "608px" }}
+      style={{ minHeight: "900px", width: "608px" }}
     >
       <div className="relative container border-8 p-2 h-96 border-indigo-300">
         <Image
@@ -43,6 +53,12 @@ export default function Project({
       </div>
       <p className={heading}>{title}</p>
       <div className={bodyText}>{description}</div>
+      <div className="mx-4 text-xs font-bold text-violet-900 my-1">TECHNOLOGY STACK</div>
+      <div className="mx-3 flex flex-wrap text-xs">
+        {techUsed.map((tech) => (
+          <TechItem text={tech} key={tech} />
+        ))}
+      </div>
       <div className="h-12 mt-auto flex space-x-2 justify-between text-sm md:text-lg">
         <a href={codeLink} target="_blank" rel="noopener noreferrer" className={button}>
           <i className="fab fa-github mr-2 text-indigo-400"></i> Code

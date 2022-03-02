@@ -13,11 +13,23 @@ export default function Projects() {
               A web-based payroll software aimed to greatly reduce complexity of payroll
               preparation.
               <br />
-              It features Excel integration, timekeeping, automatic computation, and payroll reporting.
+              It features Excel integration, timekeeping, automatic computation, and payroll
+              reporting.
             </p>
           }
           codeLink="https://github.com/jmossesgeld/ph-payroll-manager"
           liveLink="https://mage-payroll-system.web.app/"
+          techUsed={[
+            "React.js",
+            "Redux.js",
+            "Excel/SheetJS",
+            "Firebase Auth",
+            "Firebase RD",
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "ES6+",
+          ]}
         />
         <Project
           src="/images/typing.gif"
@@ -26,6 +38,7 @@ export default function Projects() {
           measured based on typing accuracy and words per minute (WPM)."
           codeLink="https://github.com/jmossesgeld/react-typing-speed"
           liveLink="http://react-typing-speed.herokuapp.com/"
+          techUsed={["React.js", "Redux.js", "HTML5", "CSS3", "Javascript", "ES6+"]}
         />
       </div>
     </div>
