@@ -2,9 +2,9 @@ import Project from "./project";
 
 export default function Projects() {
   return (
-    <div id="projects" className={"px-2 my-16 md:mx-32"}>
+    <div id="projects" className={"px-2 my-16 sm:mx-8"}>
       <h1 className="font-black text-4xl py-16 text-center ">Projects</h1>
-      <div className="flex flex-wrap md:space-x-4 justify-center justify-items-stretch">
+      <div className="flex flex-wrap justify-center space-x-2">
         <Project
           src="/images/payroll.gif"
           title="Mage Payroll System"
@@ -22,13 +22,13 @@ export default function Projects() {
           techUsed={[
             "React.js",
             "Redux.js",
+            "Material UI",
             "Excel/SheetJS",
             "Firebase Auth",
             "Firebase RD",
-            "HTML5",
-            "CSS3",
+            "HTML",
+            "CSS",
             "Javascript",
-            "ES6+",
           ]}
         />
         <Project
@@ -38,7 +38,8 @@ export default function Projects() {
           measured based on typing accuracy and words per minute (WPM)."
           codeLink="https://github.com/jmossesgeld/react-typing-speed"
           liveLink="http://react-typing-speed.herokuapp.com/"
-          techUsed={["React.js", "Redux.js", "HTML5", "CSS3", "Javascript", "ES6+"]}
+          techUsed={["React.js", "Redux.js", "HTML", "CSS", "Javascript"]}
+          imagePosition="center top"
         />
         <Project
           src="/images/emailforwarder.gif"
@@ -47,6 +48,14 @@ export default function Projects() {
           codeLink="https://github.com/jmossesgeld/email_forwarder"
           liveLink=""
           techUsed={["Python", "smtplib", "CRON"]}
+        />
+        <Project
+          src="/images/mangascraper.gif"
+          title="Manga Scraper"
+          description="A Python project which detects and downloads manga panels from source using Beautiful Soup (bs4). It also features automatic download of the next chapters by searching and scanning through the links."
+          codeLink="https://github.com/jmossesgeld/email_forwarder"
+          liveLink=""
+          techUsed={["Python", "Web Scraping", "beautifulsoup"]}
         />
       </div>
     </div>

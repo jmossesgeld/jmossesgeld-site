@@ -8,12 +8,13 @@ interface ProjectProps {
   codeLink: string;
   liveLink: string;
   techUsed: string[];
+  imagePosition?: string;
 }
 
 const bodyText = "text-md my-4 mx-4 text-justify";
 const heading = "font-black text-2xl mx-4 mt-6 ";
 const workBox =
-  "flex justify-start p-5 my-10 flex-col backdrop-blur-lg border-black-600 border-2 rounded-lg shadow-lg ";
+  "flex justify-start p-5 my-10 w-full md:w-2/3 lg:w-[45%] xl:w-[30%] flex-col backdrop-blur-lg border-black-600 border-2 rounded-lg shadow-lg ";
 const button =
   "px-8 h-auto my-auto py-2 font-bold rounded-full border-2 border-indigo-200 bg-indigo-100 text-indigo-900 hover:bg-violet-500 hover:text-violet-100 hover:scale-105 transition-all duration-100 ";
 
@@ -32,6 +33,7 @@ export default function Project({
   liveLink,
   description,
   techUsed,
+  imagePosition,
 }: ProjectProps): JSX.Element {
   const { ref, inView } = useInView({});
 
@@ -39,7 +41,7 @@ export default function Project({
     <div
       className={workBox + (inView ? " animate-fade-in" : " opacity-0")}
       ref={ref}
-      style={{ minHeight: "800px", width: "608px" }}
+      style={{ minHeight: "800px" }}
     >
       <div className="relative container border-8 p-2 h-96 border-indigo-300">
         <Image
@@ -48,7 +50,7 @@ export default function Project({
           layout="fill"
           objectFit="cover"
           className="mx-auto"
-          objectPosition="center top"
+          objectPosition={imagePosition || "left top"}
         />
       </div>
       <div className="flex justify-start flex-col h-full">
