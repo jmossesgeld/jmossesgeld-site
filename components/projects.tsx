@@ -8,7 +8,7 @@ export default function Projects() {
         The majority of the projects listed herein are specifically made based on my actual needs. I
         use these tools personally on a regular basis and on other business activities. 🙂
       </p>
-      <div className="flex flex-wrap justify-center space-x-4">
+      <div className="flex flex-wrap justify-center md:space-x-4">
         <Project
           src="/images/payroll.gif"
           title="Mage Payroll System"
