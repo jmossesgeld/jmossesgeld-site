@@ -40,6 +40,14 @@ export default function Projects() {
           liveLink="http://react-typing-speed.herokuapp.com/"
           techUsed={["React.js", "Redux.js", "HTML5", "CSS3", "Javascript", "ES6+"]}
         />
+        <Project
+          src="/images/emailforwarder.gif"
+          title="Email Forwarder"
+          description="A Python project which automatically forwards all new mails from one email address to another. It uses pythonanywhere's CRON tasks to run the script every hour."
+          codeLink="https://github.com/jmossesgeld/email_forwarder"
+          liveLink=""
+          techUsed={["Python", "smtplib", "CRON"]}
+        />
       </div>
     </div>
   );

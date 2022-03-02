@@ -39,7 +39,7 @@ export default function Project({
     <div
       className={workBox + (inView ? " animate-fade-in" : " opacity-0")}
       ref={ref}
-      style={{ minHeight: "900px", width: "608px" }}
+      style={{ minHeight: "800px", width: "608px" }}
     >
       <div className="relative container border-8 p-2 h-96 border-indigo-300">
         <Image
@@ -51,21 +51,29 @@ export default function Project({
           objectPosition="center top"
         />
       </div>
-      <p className={heading}>{title}</p>
-      <div className={bodyText}>{description}</div>
-      <div className="mx-4 text-xs font-bold text-violet-900 my-1">TECHNOLOGY STACK</div>
-      <div className="mx-3 flex flex-wrap text-xs">
-        {techUsed.map((tech) => (
-          <TechItem text={tech} key={tech} />
-        ))}
-      </div>
-      <div className="h-12 mt-auto flex space-x-2 justify-between text-sm md:text-lg">
-        <a href={codeLink} target="_blank" rel="noopener noreferrer" className={button}>
-          <i className="fab fa-github mr-2 text-indigo-400"></i> Code
-        </a>
-        <a href={liveLink} target="_blank" rel="noopener noreferrer" className={button}>
-          <i className="fa-solid fa-desktop mr-2 text-pink-400"></i> View Live
-        </a>
+      <div className="flex justify-start flex-col h-full">
+        <p className={heading}>{title}</p>
+        <div className={bodyText}>{description}</div>
+        <div className="mx-4 text-xs font-bold text-violet-900 my-1">TECHNOLOGY STACK</div>
+        <div className="mx-3 flex flex-wrap text-xs">
+          {techUsed.map((tech) => (
+            <TechItem text={tech} key={tech} />
+          ))}
+        </div>
+        <div className="h-12 mt-auto flex space-x-2 justify-between text-sm md:text-lg">
+          <a href={codeLink} target="_blank" rel="noopener noreferrer" className={button}>
+            <i className="fab fa-github mr-2 text-indigo-400"></i> Code
+          </a>
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={button + (!liveLink && " hidden")}
+          >
+            <i className="fa-solid fa-desktop mr-2 text-pink-400"></i>
+            View Live
+          </a>
+        </div>
       </div>
     </div>
   );
