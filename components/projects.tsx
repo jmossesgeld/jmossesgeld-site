@@ -5,8 +5,8 @@ export default function Projects() {
     <div id="projects" className={"px-2 my-16"}>
       <h1 className="font-black text-4xl py-16 text-center ">Projects</h1>
       <p className="text-center px-2 max-w-4xl mx-auto">
-        The majority of the projects listed herein are specifically made based on my actual needs. I use these
-        tools personally on a regular basis and on other business activities. 🙂
+        The majority of the projects listed herein are specifically made based on my actual needs. I
+        use these tools personally on a regular basis and on other business activities. 🙂
       </p>
       <div className="flex flex-wrap justify-center space-x-4">
         <Project
@@ -56,10 +56,19 @@ export default function Projects() {
         <Project
           src="/images/mangascraper.gif"
           title="Manga Scraper"
-          description="A Python project which detects and downloads manga panels from source using Beautiful Soup (bs4). It also features automatic download of the next chapters by searching and scanning through the links."
-          codeLink="https://github.com/jmossesgeld/email_forwarder"
+          description="A Python project which detects and downloads manga panels from source using Beautiful Soup (bs4). It also features automatic skipping of raws and automatic download of the next chapters by searching and scanning through the links."
+          codeLink="https://github.com/jmossesgeld/manga-scraper"
           liveLink=""
           techUsed={["Python", "Web Scraping", "beautifulsoup"]}
+        />
+        <Project
+          src="/images/jmossesgeld.gif"
+          title="My Portfolio Site"
+          description="My portfolio site which is built using React.js, Next.js and Tailwind for styling."
+          codeLink="https://github.com/jmossesgeld/jmossesgeld-site"
+          liveLink="https://jmossesgeld.site"
+          techUsed={["Next.js", "React.js", "Tailwind.css", "HTML", "CSS", "Javascript"]}
+          imagePosition="center top"
         />
       </div>
     </div>

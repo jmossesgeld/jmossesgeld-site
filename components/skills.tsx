@@ -37,7 +37,7 @@ export default function Skills() {
           ]}
         />
         <SkillPanel
-          category="Tools and Libraries"
+          category="Other Frequently Used Tools and Libraries"
           skills={[
             "smtp",
             "OpenCV",
