@@ -41,7 +41,7 @@ export default function Projects() {
           description="A web-based typing speed test which allows users to test their typing speed. The users' score are
           measured based on typing accuracy and words per minute (WPM)."
           codeLink="https://github.com/jmossesgeld/react-typing-speed"
-          liveLink="http://react-typing-speed.herokuapp.com/"
+          liveLink="http://typing-speedtest.web.app/"
           techUsed={["React.js", "Redux.js", "HTML", "CSS", "Javascript"]}
           imagePosition="center top"
         />
