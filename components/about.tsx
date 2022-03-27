@@ -32,23 +32,30 @@ export default function About() {
       <div className="max-w-xl mx-auto">
         <h1 className="font-black text-4xl mt-16 text-center">Work Experience</h1>
         <div className={workBox}>
-          <h3 className={heading}>Freelance Software Developer</h3>
+          <h3 className={heading}>Accounting and I.T. Consultant</h3>
           <em className={bodyText}>2021-present</em>
           <p className={bodyText}>
-            Providing web and software solutions for clients. My most recent project is the
-            development of a web-based payroll software aimed to greatly reduce complexity of
-            payroll preparation. Instead of the tedious timekeeping, computation of overtime,
-            tardiness, absences, mandatory deductions, etc., the users, by using the software, can
-            reduce their payroll preparation times by 90%.
-          </p>
-        </div>
-
-        <div className={workBox}>
-          <h3 className={heading}>Accounting and Tax Consultant</h3>
-          <em className={bodyText}>2021-present</em>
-          <p className={bodyText}>
-            Providing solutions for accounting and tax problems of clients. Assignments were always
-            delivered on time with zero missed deadlines even on pressurizing time constraints.
+            <ul className="list-disc marker:text-indigo-400 space-y-3 ml-4">
+              <li>
+                Providing web and software solutions for clients alongside with accounting and tax
+                services.
+              </li>
+              <li>
+                Clients handled include manufacturing companies, factories, construction companies,
+                and hospitals.
+              </li>
+              <li>
+                Most recent project is the development of a web-based payroll software aimed to
+                greatly reduce complexity of payroll preparation. Instead of the tedious
+                timekeeping, computation of overtime, tardiness, absences, mandatory deductions,
+                etc., the users, by using the software, can reduce their payroll preparation times
+                by 90%.
+              </li>
+              <li>
+                Assignments are always delivered on time with zero missed deadlines even on
+                pressurizing time constraints.
+              </li>
+            </ul>
           </p>
         </div>
 
@@ -57,9 +64,23 @@ export default function About() {
           <p className={bodyText}> NATHANIEL P. COLOBONG AND CO., CPAS</p>
           <em className={bodyText}>2017-2021 (4 years)</em>
           <p className={bodyText}>
-            Primarily responsible for leading and working with teams of auditors and accountants in
-            internal and external audits, reporting and presenting findings to client&apos;s top
-            management, making recommendations and offering solutions.
+            <ul className="list-disc marker:text-indigo-400 space-y-3 ml-4">
+              <li>
+                Primarily responsible for leading and working with teams of auditors and accountants
+                in internal and external audits.
+              </li>
+              <li>
+                Clients handled include manufacturing companies, factories, construction companies,
+                and hospitals.
+              </li>
+              <li>
+                Reporting and presenting findings to client&apos;s top management, making
+                recommendations and offering solutions.
+              </li>
+              <li>
+                Managed to improve productivity and compliance of my clients by 75% in average.
+              </li>
+            </ul>
           </p>
           <p className={bodyText + " font-semibold"}>
             My years of working as a public accountant led me to have a strong understanding of how
