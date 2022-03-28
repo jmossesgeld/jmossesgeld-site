@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import XLSX from "xlsx-js-style";
 import { ChangeEvent } from "react";
 import { setFormat, addValues, download, parseTIN } from "../../lib";
@@ -117,6 +118,9 @@ const convert1604E: NextPage = () => {
 
   return (
     <div className="h-screen flex items-center flex-col">
+      <Head>
+        <title>1604E Converter</title>
+      </Head>
       <div className="space-y-4 text-center">
         <h1 className="mt-[25vh] text-4xl text-slate-800">1604E Excel Converter</h1>
         <h2 className="text-xl  text-slate-800">
@@ -134,7 +138,10 @@ const convert1604E: NextPage = () => {
       </label>
       <p className="mt-6">
         <strong>First time user? </strong>
-        <a href="/excel_templates/template1604E.xlsx">
+        <a
+          href="/excel_templates/template1604E.xlsx"
+          className="text-green-600 underline underline-offset-4 decoration-green-600"
+        >
           Get Template
         </a>
       </p>
@@ -143,9 +150,7 @@ const convert1604E: NextPage = () => {
           Still validate the DAT file using the BIR program to ensure error-free email validation
         </em>
       </footer>
-      <a href="/templateQAP.xlsm">
-          Get Template
-        </a>
+      <a href="/excel_templates/template_QAP.xlsm">Get Template</a>
     </div>
   );
 };
