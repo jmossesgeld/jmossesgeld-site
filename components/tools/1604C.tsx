@@ -38,7 +38,6 @@ export default function convert() {
     const birForm = wsEmployer["B10"].v;
 
     const employeesRange = XLSX.utils.decode_range(wsEmployee["!ref"] ?? "");
-    console.log(employeesRange);
 
     const headerRow = `H1604C,${employerTIN},0000,12/31/${year},${isAmended},${noOfSheetsAttached},${RDO}`;
 
