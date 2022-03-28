@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import XLSX from "xlsx-js-style";
 import { ChangeEvent } from "react";
-import { setFormat, addValues } from "../../lib";
+import { setFormat, addValues, download, parseTIN } from "../../lib";
 
 const convert1604E: NextPage = () => {
   function convert(wb: XLSX.WorkBook) {
@@ -10,15 +10,14 @@ const convert1604E: NextPage = () => {
     const wsDetails = wb.Sheets["DETAILS"];
 
     // Get header info
-    const headerTIN = setFormat(wsHeaders.B3, "000000000");
+    const headerTIN = parseTIN(wsHeaders["B3"].v);
     const RDO = wsHeaders["B4"].v;
     const year = wsHeaders["B5"].v;
     const isAmended = wsHeaders["B6"].v;
     const noOfSheetsAttached = wsHeaders["B7"].v;
-    const birForm = wsHeaders["B10"].v;
 
     // Create header row
-    const headerRow = `H1604E,${headerTIN},0000,12/31/${year}`;
+    const headerRow = `H1604E,${headerTIN},0000,12/31/${year},N,0`;
 
     // Create details rows
     let detailsRows = "";
@@ -35,7 +34,12 @@ const convert1604E: NextPage = () => {
     console.log(detailsRange);
 
     function getFromExcelData(row: number, col: number) {
-      return "" + (wsDetails[XLSX.utils.encode_cell({ r: row, c: col })]?.v ?? '""');
+      return wsDetails[XLSX.utils.encode_cell({ r: row, c: col })]?.v;
+    }
+
+    function getFromExcelText(row: number, col: number) {
+      const value = getFromExcelData(row, col);
+      return value ? `"${value}"` : "";
     }
 
     // For every row in details sheet...
@@ -48,15 +52,15 @@ const convert1604E: NextPage = () => {
         BRANCH_CODE_EMPLYR: "0000",
         RETRN_PERIOD: "12/31/" + year,
         SEQ_NUM: row,
-        TIN: getFromExcelData(row, 0),
+        TIN: parseTIN(getFromExcelData(row, 0)),
         BRANCH_CODE: "0000",
-        REGISTERED_NAME: getFromExcelData(row, 1),
-        LAST_NAME: getFromExcelData(row, 2),
-        FIRST_NAME: getFromExcelData(row, 3),
-        MIDDLE_NAME: getFromExcelData(row, 4),
+        REGISTERED_NAME: getFromExcelText(row, 1),
+        LAST_NAME: getFromExcelText(row, 2),
+        FIRST_NAME: getFromExcelText(row, 3),
+        MIDDLE_NAME: getFromExcelText(row, 4),
         ATC_CODE: getFromExcelData(row, 5),
         INCOME_PAYMENT: parseFloat(getFromExcelData(row, 6)).toFixed(2),
-        TAX_RATE: parseFloat(getFromExcelData(row, 7)).toFixed(2),
+        TAX_RATE: (parseFloat(getFromExcelData(row, 7)) * 100).toFixed(2),
         ACTUAL_AMT_WITHHELD: parseFloat(getFromExcelData(row, 8)).toFixed(2),
       };
 
@@ -90,7 +94,8 @@ const convert1604E: NextPage = () => {
     // Create file
     const file = `${headerRow}\n${detailsRows}${totalsRow}`;
     console.log(file);
-    return "";
+
+    download(`${headerTIN}00001231${year}1604E.DAT`, file);
   }
 
   function onChange(event: ChangeEvent<HTMLInputElement>) {
