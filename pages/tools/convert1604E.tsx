@@ -134,7 +134,7 @@ const convert1604E: NextPage = () => {
       </label>
       <p className="mt-6">
         <strong>First time user? </strong>
-        <a href="/template1604E.xlsx" download="1604E_TEMPLATE.xlsm">
+        <a href="/template1604E.xlsx">
           Get Template
         </a>
       </p>
