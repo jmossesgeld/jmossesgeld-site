@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 const Tools: NextPage = () => {
-  return <div></div>;
+  return <div>BIR Tools</div>;
 };
 
 export default Tools;
