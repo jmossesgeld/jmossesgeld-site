@@ -1,4 +1,4 @@
-import Project from "./project";
+import ProjectItem from "./projectItem";
 
 export default function Projects() {
   return (
@@ -9,7 +9,7 @@ export default function Projects() {
         use these tools personally on a regular basis and on other business activities. 🙂
       </p>
       <div className="flex flex-wrap justify-center md:space-x-4">
-        <Project
+        <ProjectItem
           src="/images/payroll.gif"
           title="Mage Payroll System"
           description={
@@ -35,7 +35,7 @@ export default function Projects() {
             "Javascript",
           ]}
         />
-        <Project
+        <ProjectItem
           src="/images/typing.gif"
           title="Online Typing Speed Test"
           description="A web-based typing speed test which allows users to test their typing speed. The users' score are
@@ -45,7 +45,7 @@ export default function Projects() {
           techUsed={["React.js", "Redux.js", "HTML", "CSS", "Javascript"]}
           imagePosition="center top"
         />
-        <Project
+        <ProjectItem
           src="/images/emailforwarder.gif"
           title="Email Forwarder"
           description="A Python project which automatically forwards all new mails from one email address to another. It uses pythonanywhere's CRON tasks to run the script every hour."
@@ -53,7 +53,7 @@ export default function Projects() {
           liveLink=""
           techUsed={["Python", "smtplib", "CRON"]}
         />
-        <Project
+        <ProjectItem
           src="/images/mangascraper.gif"
           title="Manga Scraper"
           description="A Python project which detects and downloads manga panels from source using Beautiful Soup (bs4). It also features automatic skipping of raws and automatic download of the next chapters by searching and scanning through the links."
@@ -61,7 +61,7 @@ export default function Projects() {
           liveLink=""
           techUsed={["Python", "Web Scraping", "beautifulsoup"]}
         />
-        <Project
+        <ProjectItem
           src="/images/jmossesgeld.gif"
           title="My Portfolio Site"
           description="My portfolio site which is built using React.js, Next.js and Tailwind for styling."

@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import SkillItem from "./skillitem";
+import SkillItem from "./skillItem";
 
 const heading = "font-black text-xl mx-4 my-6 text-pink-100 text-center";
 const workBox =

@@ -1,4 +1,4 @@
-import SkillPanel from "./skillpanel";
+import SkillPanel from "./skillPanel";
 
 export default function Skills() {
   return (
