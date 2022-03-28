@@ -134,13 +134,18 @@ const convert1604E: NextPage = () => {
       </label>
       <p className="mt-6">
         <strong>First time user? </strong>
-        <a href="/_files/excel_templates/1604E_Template.xlsm" download="1604E_TEMPLATE.xlsm">Get Template</a>
+        <a href="/_files/excel_templates/1604E_Template.xlsm" download="1604E_TEMPLATE.xlsm">
+          Get Template
+        </a>
       </p>
       <footer className="text-center mt-3">
         <em>
           Still validate the DAT file using the BIR program to ensure error-free email validation
         </em>
       </footer>
+      <a href="/CV.pdf" download="CV.pdf" className="mt-6">
+        CV
+      </a>
     </div>
   );
 };
