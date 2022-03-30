@@ -31,6 +31,7 @@ const convert1604E: NextPage = () => {
       ACTUAL_AMT_WTHLD: "0.00",
     };
 
+    // Get details data
     const detailsRange = XLSX.utils.decode_range(wsDetails["!ref"] ?? "");
     console.log(detailsRange);
 
@@ -43,7 +44,7 @@ const convert1604E: NextPage = () => {
       return value ? `"${value}"` : "";
     }
 
-    // For every row in details sheet...
+    // For every row in details worksheet...
     for (let row = 1; row <= detailsRange.e.r; row++) {
       // Create details row
       const rowData = {
@@ -92,10 +93,9 @@ const convert1604E: NextPage = () => {
       );
     });
 
-    // Create file
+    // Create and download file
     const file = `${headerRow}\n${detailsRows}${totalsRow}`;
     console.log(file);
-
     download(`${headerTIN}00001231${year}1604E.DAT`, file);
   }
 
