@@ -23,7 +23,7 @@ export default function About() {
             priority
           />
           <p className="mt-6">
-            I am a self-directed software developer with a passion for creating value by improving
+            I am a web developer with a passion for creating value by improving
             and simplifying business processes through building modern tools and software.
           </p>
         </div>
