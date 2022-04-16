@@ -2,7 +2,7 @@ import ProjectItem from "./projectItem";
 
 export default function Projects() {
   return (
-    <div id="projects" className={"px-2 my-16"}>
+    <div id="projects" className="px-2 my-16">
       <h1 className="font-black text-4xl py-16 text-center ">Projects</h1>
       <p className="text-center px-2 max-w-4xl mx-auto">
         The majority of the projects listed herein are specifically made based on my actual needs. I

@@ -26,10 +26,11 @@ export default function NavBar(): JSX.Element {
         </StyledLink>
       </div>
       <div className="flex justify-end items-center">
-        <StyledLink href="#about">About</StyledLink>
-        <StyledLink href="#skills">Skills</StyledLink>
-        <StyledLink href="#projects">Projects</StyledLink>
-        <StyledLink href="#contact">Contact</StyledLink>
+        <StyledLink href="/#about">About</StyledLink>
+        <StyledLink href="/#skills">Skills</StyledLink>
+        <StyledLink href="/#projects">Projects</StyledLink>
+        <StyledLink href="/#blog">Blog</StyledLink>
+        <StyledLink href="/#contact">Contact</StyledLink>
       </div>
     </nav>
   );

@@ -5,17 +5,19 @@ import Certs from "../components/portfolio/skills";
 import Projects from "../components/portfolio/projects";
 import Contacts from "../components/portfolio/contacts";
 import Layout from "../components/portfolio/layout";
-import Blogs from "../components/portfolio/blogs";
+import Blogs from "../components/portfolio/blog";
 import { getSortedPostsData } from "../lib/blogs";
+import Background from "../components/portfolio/layout/background";
 
 const Home: NextPage = ({ allPostsData }: any) => {
   return (
     <Layout>
+      <Background />
       <Welcome />
       <About />
       <Certs />
       <Projects />
-      <Blogs allPostsData={allPostsData}/>
+      <Blogs allPostsData={allPostsData} />
       <Contacts />
     </Layout>
   );
@@ -24,8 +26,7 @@ const Home: NextPage = ({ allPostsData }: any) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
-  console.log(allPostsData)
+  const allPostsData = await getSortedPostsData();
   return {
     props: {
       allPostsData,

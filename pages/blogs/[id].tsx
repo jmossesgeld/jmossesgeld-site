@@ -1,24 +1,33 @@
 import Head from "next/head";
 import Date from "../../components/controls/Date";
-import { Blog } from "../../components/portfolio/blogs";
+import { IBlog } from "../../components/portfolio/blog";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getAllPostIds, getPostData } from "../../lib/blogs";
-import { ParsedUrlQuery } from "querystring";
+import Layout from "../../components/portfolio/layout";
+import Link from "next/link";
+import Background from "../../components/portfolio/layout/background";
 
-export default function Blog({ title, date, content }: Blog) {
+export default function Blog({ blogData }: { blogData: IBlog }) {
+  const { title, date, content } = blogData;
   return (
-    <div>
+    <Layout>
+      <Background />
       <Head>
         <title>{title}</title>
       </Head>
-      <article>
-        <h1 className="">{title}</h1>
-        <div className="">
-          <Date dateString={date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </article>
-    </div>
+      <div className="mx-[5%] md:mx-[12%] pt-24 gap-4 h-[95vh]">
+        <article className="flex flex-col gap-2 bg-white p-[5%] rounded-xl shadow-xl border-2 max-h-full overflow-auto ">
+          <h1 className="font-bold text-2xl text-indigo-800 group-hover:text-white">{title}</h1>
+          <div className="mb-10 italic">
+            <Date dateString={date} />
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+          <Link href="/#blog">
+            <a className="text-indigo-400 animate-pulse self-end">{"<< Return to Blog"}</a>
+          </Link>
+        </article>
+      </div>
+    </Layout>
   );
 }
 
@@ -32,6 +41,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const blogData = await getPostData(params?.id as string);
+
   return {
     props: {
       blogData,
