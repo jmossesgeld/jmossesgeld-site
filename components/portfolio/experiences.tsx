@@ -23,8 +23,8 @@ export default function About() {
             priority
           />
           <p className="mt-6">
-            I am a web developer with a passion for creating value by improving
-            and simplifying business processes through building modern tools and software.
+            I am a web developer with a passion for creating value by improving and simplifying
+            business processes through building modern tools and software.
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function About() {
         <div className={workBox}>
           <h3 className={heading}>Accounting and I.T. Consultant</h3>
           <em className={bodyText}>2021-present</em>
-          <p className={bodyText}>
+          <div className={bodyText}>
             <ul className="list-disc marker:text-indigo-400 space-y-3 ml-4">
               <li>
                 Providing web and software solutions for clients alongside with accounting and tax
@@ -56,14 +56,14 @@ export default function About() {
                 pressurizing time constraints.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <div className={workBox}>
           <h3 className={heading}>Senior Auditor/ Accountant</h3>
           <p className={bodyText}> NATHANIEL P. COLOBONG AND CO., CPAS</p>
           <em className={bodyText}>2017-2021 (4 years)</em>
-          <p className={bodyText}>
+          <div className={bodyText}>
             <ul className="list-disc marker:text-indigo-400 space-y-3 ml-4">
               <li>
                 Primarily responsible for leading and working with teams of auditors and accountants
@@ -81,7 +81,7 @@ export default function About() {
                 Managed to improve productivity and compliance of my clients by 75% in average.
               </li>
             </ul>
-          </p>
+          </div>
           <p className={bodyText + " font-semibold"}>
             My years of working as a public accountant led me to have a strong understanding of how
             to work in a fast-paced environment, how to deal with clients, and how to work in a
