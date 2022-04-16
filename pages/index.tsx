@@ -17,7 +17,7 @@ const Home: NextPage = ({ allPostsData }: any) => {
       <About />
       <Certs />
       <Projects />
-      <Blogs allPostsData={allPostsData} />
+      {/* <Blogs allPostsData={allPostsData} /> */}
       <Contacts />
     </Layout>
   );
