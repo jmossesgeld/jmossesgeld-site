@@ -46,7 +46,7 @@ export default function Blogs({ allPostsData }: AllPostProps) {
   return (
     <div className="flex flex-col mx-[5%] my-8 " id="blog">
       <h1 className="font-black text-4xl py-16 text-center ">Blog</h1>
-      <div className=" grid grid-cols-2 gap-8">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
         {allPostsData.map((post) => (
           <BlogItem key={post.id} {...post} />
         ))}
