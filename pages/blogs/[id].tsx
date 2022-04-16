@@ -16,7 +16,7 @@ export default function Blog({ blogData }: { blogData: IBlog }) {
         <title>{title}</title>
       </Head>
       <div className="mx-[5%] md:mx-[12%] pt-24 gap-4 h-[95vh]">
-        <article className="flex flex-col gap-2 bg-white p-[5%] rounded-xl shadow-xl border-2 max-h-full overflow-auto ">
+        <article id="blogpost" className="flex flex-col gap-2 bg-white p-[5%] rounded-xl shadow-xl border-2 max-h-full overflow-auto ">
           <h1 className="font-bold text-2xl text-indigo-800 group-hover:text-white">{title}</h1>
           <div className="mb-10 italic">
             <Date dateString={date} />

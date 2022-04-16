@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 export default function Welcome() {
   return (
     <div className="flex h-screen justify-center items-start flex-col px-5 md:px-32 space-y-6 transition-all duration-200 ">
-      <h1 className="text-6xl font-sans animate-fade-in-down">John Al Mossesgeld</h1>
+      <h1 className="text-6xl font-normal font-sans animate-fade-in-down">John Al Mossesgeld</h1>
       <h5 className="text-sm md:text-2xl animate-fade-in-left">
         <Typewriter
           options={{

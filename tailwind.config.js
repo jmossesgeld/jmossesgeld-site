@@ -4,7 +4,7 @@ module.exports = {
     fontFamily: {
       sans: "Montserrat, Arial, sans-serif",
       serif: "Georgia, serif",
-      mono: "mono",
+      mono: "Consolas",
       roboto: "Roboto, sans-serif"
     },
     extend: {
