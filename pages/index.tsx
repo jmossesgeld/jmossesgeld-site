@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
-import Welcome from "../components/portfolio/welcome";
+import Welcome from "../components/portfolio/landing";
 import About from "../components/portfolio/experiences";
-import Certs from "../components/portfolio/skills";
+import Skills from "../components/portfolio/skills";
 import Projects from "../components/portfolio/projects";
 import Contacts from "../components/portfolio/contacts";
 import Layout from "../components/portfolio/layout";
@@ -15,9 +15,9 @@ const Home: NextPage = ({ allPostsData }: any) => {
       <Background />
       <Welcome />
       <About />
-      <Certs />
+      <Skills />
       <Projects />
-      {/* <Blogs allPostsData={allPostsData} /> */}
+      <Blogs allPostsData={allPostsData} />
       <Contacts />
     </Layout>
   );

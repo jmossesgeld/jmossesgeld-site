@@ -2,6 +2,7 @@
 title: "Learning Web3 and the Future it Holds"
 date: "2022-04-22"
 summary: "Aliquam laoreet vel turpis at tincidunt. Phasellus a aliquet tortor. Pellentesque quis leo porttitor est condimentum gravida. Nam luctus finibus porta. Sed eu nibh et erat rhoncus faucibus. Morbi nunc eros, posuere id quam vehicula, lobortis iaculis ipsum. Sed sed tincidunt libero. Etiam in risus lorem. Nullam vitae arcu leo."
+category: "Article"
 ---
 
 Aliquam laoreet vel turpis at tincidunt. Phasellus a aliquet tortor. Pellentesque quis leo porttitor est condimentum gravida. Nam luctus finibus porta. Sed eu nibh et erat rhoncus faucibus. Morbi nunc eros, posuere id quam vehicula, lobortis iaculis ipsum. Sed sed tincidunt libero. Etiam in risus lorem. Nullam vitae arcu leo. Nam tellus velit, dictum a fringilla vel, suscipit at eros. Curabitur egestas justo sit amet lacus pharetra sollicitudin. Cras a risus ac risus tempor venenatis ac ut mauris. Pellentesque dolor ligula, mollis id euismod id, varius in nunc. Nunc at arcu et nisl vehicula condimentum.

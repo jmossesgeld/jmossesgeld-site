@@ -1,7 +1,8 @@
 ---
-title: "As a CPA, Why Am I Trying to Switch into Software Engineering?"
+title: "As a CPA, Why Am I Shifting into Software Engineering?"
 date: "2022-04-19"
 summary: "Aenean rutrum, mi quis ultricies eleifend, nisi ante viverra augue, quis aliquam lectus justo id metus. Mauris ut augue in velit euismod placerat. Cras ut nisl sit amet enim euismod luctus at at quam. Vivamus erat erat, imperdiet in auctor in, pulvinar sed augue. Sed rhoncus lorem eu elit dictum ornare. Morbi quis justo eget urna ultrices sodales."
+category: "Developer Journey"
 ---
 
 Aenean rutrum, mi quis ultricies eleifend, nisi ante viverra augue, quis aliquam lectus justo id metus. Mauris ut augue in velit euismod placerat. Cras ut nisl sit amet enim euismod luctus at at quam. Vivamus erat erat, imperdiet in auctor in, pulvinar sed augue. Sed rhoncus lorem eu elit dictum ornare. Morbi quis justo eget urna ultrices sodales. In cursus lacus et feugiat vestibulum. Ut posuere tellus nunc, eget lacinia diam tincidunt vel. Quisque ultrices suscipit tellus, quis ultrices diam sagittis condimentum.

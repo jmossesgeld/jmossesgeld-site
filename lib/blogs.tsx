@@ -30,7 +30,7 @@ export async function getSortedPostsData() {
       return {
         id,
         content,
-        ...(matterResult.data as { date: string; title: string; summary: string }),
+        ...(matterResult.data as { date: string; title: string; summary: string, category: string }),
       };
     })
   );

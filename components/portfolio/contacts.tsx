@@ -20,7 +20,7 @@ export default function Contacts() {
 
 
   return (
-    <div id="contact" className={"bg-violet-600 p-5 h-screen flex flex-col justify-center"}>
+    <section id="contact" className={"bg-violet-600 p-5 h-screen flex flex-col justify-center"}>
       <div className="relative flex flex-col items-center mt-16 mb-12 w-fit mx-auto justify-center group">
         <button
           onClick={onClick}
@@ -53,6 +53,6 @@ export default function Contacts() {
           Copyright © {new Date().getFullYear()}. All rights reserved.
         </p>
       </footer>
-    </div>
+    </section>
   );
 }

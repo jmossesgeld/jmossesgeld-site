@@ -2,6 +2,7 @@
 title: "Where am I Now on My Journey?"
 date: "2022-04-16"
 summary: "Nullam in erat interdum, dapibus nunc accumsan, consequat leo. Proin sagittis vehicula hendrerit. Phasellus commodo quis ante quis lacinia. Sed sagittis interdum maximus. Quisque consequat, sapien sit amet gravida sodales, sapien massa varius dolor, accumsan molestie nunc turpis ac metus. Integer blandit rhoncus neque non venenatis."
+category: "Developer Journey"
 ---
 
 Nullam in erat interdum, dapibus nunc accumsan, consequat leo. Proin sagittis vehicula hendrerit. Phasellus commodo quis ante quis lacinia. Sed sagittis interdum maximus. Quisque consequat, sapien sit amet gravida sodales, sapien massa varius dolor, accumsan molestie nunc turpis ac metus. Integer blandit rhoncus neque non venenatis. Nullam tristique lorem hendrerit ultricies rhoncus. Duis gravida purus sit amet iaculis varius. Cras vitae nisi at eros tincidunt varius.
