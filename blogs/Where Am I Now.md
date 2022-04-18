@@ -1,7 +1,7 @@
 ---
 title: "Where am I Now on My Journey?"
-date: "2022-04-16"
-summary: "Nullam in erat interdum, dapibus nunc accumsan, consequat leo. Proin sagittis vehicula hendrerit. Phasellus commodo quis ante quis lacinia. Sed sagittis interdum maximus. Quisque consequat, sapien sit amet gravida sodales, sapien massa varius dolor, accumsan molestie nunc turpis ac metus. Integer blandit rhoncus neque non venenatis."
+date: "2021-04-16"
+summary: "I have first started interest in programming when I was a child playing Warcraft 3 on a Windows XP computer. The game has this system where you can code your own map and create your own mechanics. The scripting language used was called JASS or Just Another Scripting Syntax which is similar with the C programming language."
 category: "Developer Journey"
 ---
 

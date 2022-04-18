@@ -1,7 +1,7 @@
 ---
-title: "Learning Web3 and the Future it Holds"
-date: "2022-04-22"
-summary: "Aliquam laoreet vel turpis at tincidunt. Phasellus a aliquet tortor. Pellentesque quis leo porttitor est condimentum gravida. Nam luctus finibus porta. Sed eu nibh et erat rhoncus faucibus. Morbi nunc eros, posuere id quam vehicula, lobortis iaculis ipsum. Sed sed tincidunt libero. Etiam in risus lorem. Nullam vitae arcu leo."
+title: "Learning Web 3.0, the Internet Computer, and the Future They Hold"
+date: "2022-04-13"
+summary: "Web3 is coming near. It is an idea for a new iteration of the World Wide Web based on blockchain technology, which incorporates concepts such as decentralization and token-based economics. Web3 promised to provide increased data security, scalability, and privacy for users and combat the influence of large techonology companies."
 category: "Article"
 ---
 

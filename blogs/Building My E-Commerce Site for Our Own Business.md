@@ -1,7 +1,7 @@
 ---
 title: "Building My E-Commerce Site for Our Clothing Business"
-date: "2022-04-22"
-summary: "Cras lacinia, lorem non imperdiet luctus, nisl ligula viverra massa, quis semper sapien quam a leo. Proin tempus erat in varius faucibus. Sed ultricies est id sapien lacinia mattis. Nunc ornare, nisl ac congue euismod, diam velit tempus nulla, et feugiat lectus ante et dolor. Fusce tincidunt maximus ligula in pharetra. Aliquam enim lorem, commodo sed mi sollicitudin, malesuada eleifend massa. Nunc nec aliquet lectus."
+date: "2022-04-04"
+summary: "About time I put my existing web development skills to test. I plan to create an E-commerce site for our own clothing line business. I plan to make the website using Next.js for Search Engine Optimization (SEO), React.js, Typescript, and Tailwind for styling."
 category: "Project Walkthrough"
 ---
 
