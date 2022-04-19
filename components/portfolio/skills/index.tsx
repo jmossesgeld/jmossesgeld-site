@@ -27,7 +27,6 @@ const skillSet = [
       "HTML",
       "CSS",
       "MS Office",
-      "Google/StackOverflow",
     ],
   },
 ];
