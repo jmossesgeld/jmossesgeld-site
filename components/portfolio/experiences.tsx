@@ -1,12 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useInView } from "react-intersection-observer";
-
 const Box = ({ children, className, ...props }: any) => {
   return (
     <div
       className={
-        "backdrop-blur-lg relative my-10 border-indigo-100 border-2 p-3 mx-4 rounded-lg shadow-md md:odd:left-28 md:even:right-28 hover:scale-110 transition-all duration-200 " +
+        "backdrop-blur-lg relative my-10 border-indigo-100 border-2 p-3 mx-4 rounded-lg shadow-md md:right-28 hover:scale-110 transition-all duration-200 " +
         className
       }
       {...props}
@@ -43,42 +39,30 @@ const Date = ({ children, ...props }: any) => {
   );
 };
 
-const Trail = () => {
+const Trail = ({ year, right: left }: { year: string; right?: boolean }) => {
   return (
     <div className="flex flex-col h-full gap-4 mx-auto w-max mt-10">
       {[0, 1, 2].map((i) => (
         <div key={i} className="rounded-full bg-purple-300 w-5 h-5 top-0"></div>
       ))}
+      <div
+        className={
+          "absolute mt-5 text-6xl font-bold text-violet-200  " +
+          (left ? "right-1/2 mr-10 " : "ml-12 md:ml-24 ")
+        }
+      >
+        {year}
+      </div>
     </div>
   );
 };
 
 export default function About() {
-  const { ref, inView } = useInView({});
   return (
     <section id="about">
-      <div className="flex justify-evenly items-center flex-col h-4/5 mx-auto text-center  bg-indigo-100 pt-24 pb-20">
-        <div ref={ref}>
-          <BodyText className="italic bg-indigo-100 rounded-xl p-8 flex flex-col items-center ">
-            <Image
-              src="/images/profile2.jpg"
-              height={200}
-              width={200}
-              alt="profile img"
-              className={"rounded-full" + (inView ? " animate-fade-in-left" : " opacity-0")}
-              priority
-            />
-            <p className={"mt-12" + (inView ? " animate-fade-in-right" : " opacity-0")}>
-              I am a web developer with a passion for creating value by improving and simplifying
-              business processes through building modern tools and software.
-            </p>
-          </BodyText>
-        </div>
-      </div>
-
       <div className="max-w-xl mx-auto py-20">
-        <h1 className="font-black text-4xl mt-16 text-center">Career Timeline</h1>
-        <Trail />
+        <h1 className="font-black text-4xl mt-16 mb-8 text-center">Career Timeline</h1>
+        <Trail year="2022" />
         <div></div>
         <Box>
           <Date>January 2021 to present</Date>
@@ -96,12 +80,13 @@ export default function About() {
                 absences, overtime, withholding taxes, and more.
               </li>
               <li>
-                Other projects include, POS systems, Inventory Management systems and Automatic BIR reports generation for tax reports submissions.
+                Other projects include, POS systems, Inventory Management systems and Automatic BIR
+                reports generation for tax reports submissions.
               </li>
             </ul>
           </BodyText>
         </Box>
-        <Trail />
+        <Trail year="2021" />
         <div></div>
         <Box>
           <Date>January 2018 to January 2021 </Date>
@@ -132,7 +117,7 @@ export default function About() {
             team.
           </BodyText>
         </Box>
-        <Trail />
+        <Trail year="2018" />
         <div></div>
         <Box>
           <Date>May 2017 to October 2017</Date>
@@ -146,7 +131,7 @@ export default function About() {
           </BodyText>
         </Box>
 
-        <Trail />
+        <Trail year="2017" />
         <div></div>
         <Box>
           <Date>October 2016 - April 2017</Date>
@@ -165,7 +150,7 @@ export default function About() {
             </ul>
           </BodyText>
         </Box>
-        <Trail />
+        <Trail year="2016" />
         <div></div>
         <Box>
           <Date>June 2013 - April 2017</Date>
@@ -181,6 +166,7 @@ export default function About() {
             </ul>
           </BodyText>
         </Box>
+        <Trail year="2013" />
       </div>
     </section>
   );

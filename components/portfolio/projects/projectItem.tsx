@@ -73,7 +73,7 @@ export default function Project({
             className={button + (!liveLink && " hidden")}
           >
             <i className="fa-solid fa-desktop mr-2 text-pink-400"></i>
-            <div className="w-max">View Live</div>
+            <div className="w-max">Demo</div>
           </a>
         </div>
       </div>

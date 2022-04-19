@@ -6,7 +6,7 @@ export default function Projects() {
       <h1 className="font-black text-4xl py-16 text-center ">Projects</h1>
       <p className="text-center px-2 max-w-4xl mx-auto">
         The majority of the projects listed herein are specifically made based on my actual needs. I
-        use these tools personally on a regular basis and on other business activities. 🙂
+        use these tools personally on a regular basis and on other business activities.
       </p>
       <div className="flex flex-wrap justify-center md:space-x-4">
         <ProjectItem
