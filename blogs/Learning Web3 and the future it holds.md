@@ -1,6 +1,6 @@
 ---
 title: "Learning Web 3.0, the Internet Computer, and the Future They Hold"
-date: "2022-04-13"
+date: "2022-02-13"
 summary: "Web3 is coming near. It is an idea for a new iteration of the World Wide Web based on blockchain technology, which incorporates concepts such as decentralization and token-based economics. Web3 promised to provide increased data security, scalability, and privacy for users and combat the influence of large techonology companies."
 category: "Article"
 ---

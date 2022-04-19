@@ -1,6 +1,6 @@
 ---
 title: "As an Accountant, Why Am I Shifting into Software Engineering?"
-date: "2021-04-19"
+date: "2021-03-19"
 summary: "What is the future of accountancy? In the beginning, accountants rely on recording transactions manually on books and worksheets. However, in the modern times we live in, almost all transactions are digitalized. There is no more need to gruel overnight just to total journal entries for a year, waste paper and materials to record and maintain transactions, or messily use white-ink to erase errors."
 category: "Developer Journey"
 ---
