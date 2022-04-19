@@ -11,11 +11,11 @@ const LoadingScreen = () => {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setIsLoading(false);
-  }, []);
+  // useEffect(() => {
+  //   setIsLoading(false);
+  // }, []);
 
   // return <>{isLoading ? <LoadingScreen /> : <Component {...pageProps} />}</>;
   return <Component {...pageProps} />;
