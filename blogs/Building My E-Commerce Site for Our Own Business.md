@@ -1,5 +1,5 @@
 ---
-title: "Building My E-Commerce Site for Our Clothing Business"
+title: "Building an E-Commerce Site for My Online Shop"
 date: "2022-04-04"
 summary: "About time I put my existing web development skills to test. I plan to create an E-commerce site for our own clothing line business. I plan to make the website using Next.js for Search Engine Optimization (SEO), React.js, Typescript, and Tailwind for styling."
 category: "Project Walkthrough"
