@@ -1,5 +1,5 @@
 ---
-title: "Rewriting My Payroll App"
+title: "Rewriting My Payroll App - Day 1"
 date: "2022-04-21"
 summary: "It has been a while since I made the app so I reviewed the code then I realized that there is a lot of room for improvements especially now that I gained more skill and experience as compared back then. Now, I plan to re-write the whole thing from scratch and use Typescript instead of just Javascript, Next.js instead of just React.js and Tailwind instead of MaterialUI. I also plan add authentication using Firebase and database integration using Firestore SDK.
 I will detail my progress each day on this post."
@@ -29,3 +29,4 @@ Setup has been finished. I will now go create the homepage and the navigation ba
 After almost an hour of grueling this is what I came up with:
 
 ![Image](/blogs/image1.png)
+
