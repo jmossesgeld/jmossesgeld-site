@@ -1,13 +1,13 @@
 ---
 title: "Rewriting My Payroll App - Day 2"
-date: "2022-04-22"
+date: "2022-04-21"
 summary: "This time I will proceed with the Employees component. The component will list all the employees enrolled on the system. I will first use a dummy data in JSON format which will be returned by an API. I will also implement the add employee and edit employee functionalities today."
 category: "Project Walkthrough"
 ---
 
 # Day 2
 
-### April 22, 2022
+### April 21, 2022
 
 **3:41 PM**
 
