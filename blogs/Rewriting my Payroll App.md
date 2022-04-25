@@ -28,5 +28,5 @@ Setup has been finished. I will now go create the homepage and the navigation ba
 
 After almost an hour of grueling this is what I came up with:
 
-![Image](/blogs/image1.png)
+![Image](/blogs/image1.PNG)
 
