@@ -1,18 +1,18 @@
 ---
 title: "Rewriting My Payroll App - Day 4"
-date: "2022-04-22"
-summary: "I have done preparing the Employees table but I still yet to finish the implementation of the add and edit employees. This time I will setup Redux and Redux.js toolkit for the app-wide state management just like in the previous version of the app. My targets for today are to finish the implementation of add/edit employees and integrating the data to store."
+date: "2022-04-26"
+summary: "After writing the useEmployees hook, it is about time that I finish constructing the EmployeeForm. What I plan is to use the same form for both the Add New Employee and Edit Employee. But how will I do that? It will be based on the "id" property which will be passed on the EmployeeForm which it will use to repopulate the employee data to be ready for editing. If there is no "id" property, the form will assume that a new employee is being registered and the form will be empty."
 category: "Project Walkthrough"
 ---
 
-# Day 3
+# Day 4
 
-### April 22, 2022
+### April 26, 2022
 
-**2:26 PM**
+**12:32 PM**
 
-I have done preparing the Employees table but I still have to finish the implementation of the add and edit employees. This time I will setup Redux and Redux.js toolkit for app-wide state management just like in the previous version of the app. My targets for today are to finish the implementation of add/edit employees and integrating the data to store.
+After writing the useEmployees hook, it is about time that I finish constructing the EmployeeForm. What I plan is to use the same form for both the Add New Employee and Edit Employee. But how will I do that? It will be based on the "id" property which will be passed on the EmployeeForm which it will use to repopulate the employee data to be ready for editing. If there is no "id" property, the form will assume that a new employee is being registered and the form will be empty.
 
-**5:50 PM**
+**4:30 PM**
 
-After testing, I realized that Redux is too much and is not necessary for a Next.js app. I have decided to create custom hooks instead for handling local data.
+This time, I will write another resuable hook called useInput, which will be primarily responsible for input validation.

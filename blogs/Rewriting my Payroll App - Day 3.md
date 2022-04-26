@@ -16,3 +16,7 @@ I have done preparing the Employees table but I still have to finish the impleme
 **5:50 PM**
 
 After testing, I realized that Redux is too much and is not necessary for a Next.js app. I have decided to create custom hooks instead for handling local data.
+
+**6:40 PM**
+
+I have finished implementing the useEmployees hook. On the next day, I will try finish constructing the employee form.
