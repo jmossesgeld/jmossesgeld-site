@@ -7,6 +7,8 @@ category: "Article"
 
 # 6:34 AM
 
+I am watching some video about binary search trees and I suddenly taught, 'Why don't I try implementing that in Javascript and see if I have learned anything?'. Hence, a challenge was accepted. This time, I will practice TDD or Test-Driven Development where I will write my failing tests first before wrting any functional code. For testing, I will use Jest in order to avoid having to constantly alt-tabbing to the browser.
+
 ## My simple test suite
 
 ```javascript
@@ -109,3 +111,7 @@ For finding the next slot to insert a node, I used recursion where if the left o
 For traversing the tree in an in-order fashion, I used a while loop where as long as a currentNode has a left property, it will save the currentNode in an array that will be referenced later to detect remaining nodes and then traverse to the next node. If left property is null, it will add the `currentNode.value` to the result. The method will return the result after the while loop.
 
 Now, it is time for me to check the solution if I did this right.
+
+# 7:35 AM
+
+Oops. I forgot how to implement the removal of a node. Well, since I am already viewing the solution, I will just continue and check if I have implemented the rest of my code properly. 
