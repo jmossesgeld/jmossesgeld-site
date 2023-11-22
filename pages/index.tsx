@@ -21,7 +21,7 @@ const Home: NextPage = ({ allPostsData }: any) => {
       <Projects />
       <Blogs allPostsData={allPostsData} />
       <Contacts /> */}
-      <h1>Site currently on maintenance...</h1>
+      <h1 style="margin-top: 4rem">Site currently on maintenance...</h1>
     </Layout>
   );
 };
