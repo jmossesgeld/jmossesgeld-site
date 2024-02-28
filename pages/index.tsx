@@ -13,14 +13,14 @@ import About from "../components/portfolio/about";
 const Home: NextPage = ({ allPostsData }: any) => {
   return (
     <Layout>
-{/*       <Background />
+      <Background />
       <Welcome />
       <About/>
       <Experiences />
       <Skills />
       <Projects />
       <Blogs allPostsData={allPostsData} />
-      <Contacts /> */}
+      <Contacts />
       <h1 style="margin-top: 4rem">Site currently on maintenance...</h1>
     </Layout>
   );
